@@ -1,0 +1,113 @@
+/* =============================================
+   ACHIEVEMENTS.CSS — Achievements Section Styles
+   Ngelowetan FC | sections/achievements/achievements.css
+   ============================================= */
+
+.achievements-section {
+  padding: 4rem 0;
+  background: linear-gradient(to bottom, #fff, #f9fafb);
+}
+
+@media (min-width: 640px)  { .achievements-section { padding: 5rem 0; } }
+@media (min-width: 1024px) { .achievements-section { padding: 6rem 0; } }
+
+/* Achievements Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .achievements-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Achievement Card */
+.achievement-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  border: 2px solid #e5e7eb;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.achievement-card:hover {
+  border-color: #f97316;
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.achievement-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+  transform: scale(1.25);
+}
+
+.achievement-count {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #f97316;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.achievement-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-year {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Recent Achievements Box */
+.recent-achievements {
+  margin-top: 4rem;
+  background: #fff7ed;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border-left: 4px solid #f97316;
+}
+
+.recent-achievements h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.recent-achievements ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recent-achievements li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #374151;
+}
+
+.check-icon {
+  color: #f97316;
+  font-weight: 700;
+  flex-shrink: 0;
+}

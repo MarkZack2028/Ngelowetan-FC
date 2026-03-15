@@ -1,0 +1,96 @@
+/* =============================================
+   FOOTER.CSS — Footer Styles
+   Ngelowetan FC | sections/footer/footer.css
+   ============================================= */
+
+.site-footer {
+  background: #000;
+  border-top: 4px solid #f97316;
+  padding: 3rem 0;
+}
+
+/* Footer Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Brand */
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-desc {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+
+/* Column Titles */
+.footer-col-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Info & Contact Text */
+.footer-info p,
+.footer-contact p {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #f97316;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.social-btn:hover {
+  background: #ea580c;
+  transform: scale(1.10);
+}
+
+.social-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid #374151;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}

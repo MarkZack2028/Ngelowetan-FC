@@ -1,0 +1,151 @@
+/* =============================================
+   SPONSORS.CSS — Sponsors Section Styles
+   Ngelowetan FC | sections/sponsors/sponsors.css
+   ============================================= */
+
+.sponsors-section {
+  padding: 4rem 0;
+  background: #000;
+}
+
+@media (min-width: 640px)  { .sponsors-section { padding: 5rem 0; } }
+@media (min-width: 1024px) { .sponsors-section { padding: 6rem 0; } }
+
+/* Sponsors Grid */
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .sponsors-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Sponsor Card */
+.sponsor-card {
+  position: relative;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.sponsor-card:hover {
+  transform: scale(1.05);
+}
+
+.sponsor-card-inner {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Default View (grayscale) */
+.sponsor-default-view,
+.sponsor-hover-view {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.sponsor-default-view {
+  opacity: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sponsor-hover-view {
+  opacity: 0;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sponsor-card:hover .sponsor-default-view { opacity: 0; }
+.sponsor-card:hover .sponsor-hover-view   { opacity: 1; }
+
+/* Logo Placeholder */
+.sponsor-logo-placeholder {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, #4b5563, #374151);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.sponsor-logo-placeholder span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #9ca3af;
+}
+
+.sponsor-name-gray  { color: #9ca3af; font-weight: 700; font-size: 0.875rem; }
+.sponsor-name-white { font-size: 1.25rem; font-weight: 900; color: #fff; }
+.sponsor-category   { color: #fed7aa; font-size: 0.875rem; font-weight: 600; }
+
+/* Border Accent */
+.sponsor-border {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #374151;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.sponsor-card:hover .sponsor-border {
+  border-color: #fb923c;
+}
+
+/* CTA Box */
+.sponsor-cta {
+  margin-top: 4rem;
+  background: #111827;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border: 2px solid #f97316;
+  text-align: center;
+}
+
+.sponsor-cta h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.sponsor-cta p {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+.btn-primary {
+  background: #f97316;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ea580c;
+  transform: scale(1.05);
+}

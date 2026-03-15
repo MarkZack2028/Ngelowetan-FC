@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+  <title>Ngelowetan FC - Klub Futsal Profesional</title>
+  <meta name="description"
+    content="Ngelowetan FC adalah klub futsal profesional yang berdedikasi membangun prestasi. Latihan 3x seminggu, aktif turnamen lokal & regional. Cari sponsor Anda di sini." />
+  <meta name="keywords" content="futsal, klub futsal, Ngelowetan FC, olahraga futsal, sponsor, turnamen" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="public/icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="public/icon-light-32x32.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="public/icon-dark-32x32.png" media="(prefers-color-scheme: dark)" />
+  <link rel="apple-touch-icon" href="public/apple-icon.png" />
+
+  <!-- CSS: Base (global reset + utilities) -->
+  <link rel="stylesheet" href="sections/base/base.css" />
+
+  <!-- CSS: Navbar (dimuat pertama agar tidak flicker) -->
+  <link rel="stylesheet" href="sections/navbar/navbar.css" />
+
+  <!-- CSS: Per Section -->
+  <link rel="stylesheet" href="sections/hero/hero.css" />
+  <link rel="stylesheet" href="sections/about/about.css" />
+  <link rel="stylesheet" href="sections/squad/squad.css" />
+  <link rel="stylesheet" href="sections/achievements/achievements.css" />
+  <link rel="stylesheet" href="sections/sponsors/sponsors.css" />
+  <link rel="stylesheet" href="sections/footer/footer.css" />
+</head>
+
+<body>
+  <main class="w-full bg-white overflow-hidden">
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" class="hero-section">
+      <img src="public/assetMinsoc/Fotbar.jpg" alt="Ngelowetan FC Team Celebration" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text-group">
+          <h1 class="hero-title">Ngelowetan FC</h1>
+          <p class="hero-subtitle">Bersama Membangun Prestasi, Raih Kemenangan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-black">Tentang Kami</h2>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">1</div>
+            <p class="stat-label">Tahun Berdiri</p>
+            <p class="stat-desc">Sejak 2025, Membangun Tradisi Futsal</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3x</div>
+            <p class="stat-label">Latihan per Minggu</p>
+            <p class="stat-desc">Dedikasi Penuh untuk Performa Terbaik</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <p class="stat-label">Anggota Tim</p>
+            <p class="stat-desc">Pemain Profesional &amp; Berbakat</p>
+          </div>
+        </div>
+
+        <div class="about-quote">
+          <p>
+            Ngelowetan FC adalah klub futsal profesional yang berdiri sejak 2025 dengan komitmen
+            penuh terhadap pengembangan olahraga futsal di tingkat lokal dan regional. Kami rutin
+            berlatih 3x seminggu dengan standar nasional dan aktif mengikuti berbagai turnamen
+            lokal. Tim kami terdiri dari atlet-atlet berbakat yang siap memberikan
+            performa terbaik di setiap pertandingan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SQUAD SECTION ===================== -->
+    <section id="squad" class="squad-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-white">Profil Pemain</h2>
+          <p class="section-subtitle text-orange">Squad Ngelowetan FC 2025/2026</p>
+          <div class="divider-line"></div>
+        </div>
+
+        <!-- Filter Posisi — diisi oleh sections/squad/squad.js -->
+        <div class="squad-filter-wrap">
+          <div id="squad-filter"></div>
+        </div>
+
+        <!-- Grid Pemain — diisi oleh sections/squad/squad.js -->
+        <div class="players-grid" id="players-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+    <section id="achievements" class="achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-black">Pencapaian Kami</h2>
+          <p class="section-subtitle text-gray">Prestasi yang Telah Diraih</p>
+          <div class="divider-line"></div>
+        </div>
+        <!-- Diisi oleh sections/achievements/achievements.js -->
+        <div class="achievements-grid" id="achievements-grid"></div>
+
+        <div class="recent-achievements">
+          <h3>Pencapaian Terbaru</h3>
+          <ul>
+            <li><span class="check-icon">✓</span><span>Juara 1 Futsal Trofeo Liga Ramadhan 2026</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SPONSORS SECTION ===================== -->
+    <section id="sponsors" class="sponsors-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-white">Pendukung Resmi</h2>
+          <p class="section-subtitle text-orange">Media Partner &amp; Sponsor Kami</p>
+          <div class="divider-line"></div>
+        </div>
+        <!-- Diisi oleh sections/sponsors/sponsors.js -->
+        <div class="sponsors-grid" id="sponsors-grid"></div>
+
+        <div class="sponsor-cta">
+          <h3>Jadilah Sponsor Kami</h3>
+          <p>Dukung perkembangan olahraga futsal profesional dan tingkatkan visibilitas brand Anda</p>
+          <button id="sponsor-btn" class="btn-primary">Hubungi Tim Marketing</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-col">
+            <h3 class="footer-brand">Ngelowetan FC</h3>
+            <p class="footer-desc">
+              Klub futsal profesional yang berdedikasi untuk membangun prestasi dan memberikan
+              yang terbaik di setiap pertandingan.
+            </p>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="footer-col">
+            <h3 class="footer-col-title">Lokasi Latihan</h3>
+            <div class="footer-info">
+              <p><span class="text-orange font-semibold">Lapangan Metro Futsal</span></p>
+              <p>Jln. Raya Welahan</p>
+              <p>Mulyorejo, Demak, Jawa Tengah 59517</p>
+              <p class="mt-4"><span class="font-semibold" style="color:#fff;">Jam Operasional:</span></p>
+              <p>Senin - Minggu: 24 Jam</p>
+            </div>
+          </div>
+
+          <!-- Kontak & Sosial -->
+          <div class="footer-col">
+            <h3 class="footer-col-title">Hubungi Kami</h3>
+            <div class="footer-contact">
+              <p><span class="text-orange font-semibold">Email:</span> nikoalansyah@gmail.com</p>
+              <p><span class="text-orange font-semibold">Telepon:</span> +62 856 0061 8066</p>
+              <div class="social-links">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/ngelowetan_fc" class="social-btn" title="Instagram @ngelowetan_fc"
+                  aria-label="Instagram Ngelowetan FC" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.322a1.44 1.44 0 110.001 2.881 1.44 1.44 0 01-.001-2.881z" />
+                  </svg>
+                </a>
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@ngelowetan_fc" class="social-btn" title="TikTok @ngelowetan_fc"
+                  aria-label="TikTok Ngelowetan FC" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M19.498 3h-3.196a.5.5 0 00-.5.5v15a.5.5 0 00.5.5h3.196a.5.5 0 00.5-.5v-15a.5.5 0 00-.5-.5zm-9.326 9.75c-.165 0-.3.135-.3.3v3.206a.3.3 0 01-.3.3H6.67a.3.3 0 01-.3-.3V7.25a.3.3 0 01.3-.3h3.202a.3.3 0 01.3.3v3.5c0 .165.135.3.3.3h3.196a.5.5 0 00.5-.5V6.75a.5.5 0 00-.5-.5h-3.196a.5.5 0 00-.5.5v3.5a.3.3 0 01-.3.3h-3.202a.3.3 0 01-.3-.3V6.75a.3.3 0 01.3-.3h3.202a.3.3 0 01.3.3v.5c0 .165.135.3.3.3h3.196a.5.5 0 00.5-.5v-.5a.5.5 0 00-.5-.5H6.67a.5.5 0 00-.5.5v11a.5.5 0 00.5.5h3.202a.5.5 0 00.5-.5v-3.206a.3.3 0 01.3-.3h3.196a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3.196z" />
+                  </svg>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6285600618066" class="social-btn" title="WhatsApp" aria-label="WhatsApp">
+                  <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.898 1.488c-2.9 1.694-4.788 5.195-4.788 8.884 0 4.953 4.027 8.98 8.98 8.98 2.33 0 4.522-.822 6.27-2.18l.002-.001 3.645 1.053-1.077-3.906.007-.01a8.954 8.954 0 002.064-5.945c0-4.953-4.027-8.98-8.98-8.98" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Ngelowetan FC. Semua hak cipta dilindungi.</p>
+          <p>Bersama Membangun Prestasi, Raih Kemenangan</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- JS: Navbar (dimuat pertama, sebelum section JS) -->
+  <script src="sections/navbar/navbar.js"></script>
+
+  <!-- JS: Per Section (harus dimuat sebelum main.js) -->
+  <script src="sections/squad/squad.js"></script>
+  <script src="sections/achievements/achievements.js"></script>
+  <script src="sections/sponsors/sponsors.js"></script>
+
+  <!-- JS: Main (inisialisasi semua section) -->
+  <script src="sections/main.js"></script>
+</body>
+
+</html>

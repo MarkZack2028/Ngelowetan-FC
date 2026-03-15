@@ -1,0 +1,62 @@
+/* =============================================
+   ABOUT.CSS — About Section Styles
+   Ngelowetan FC | sections/about/about.css
+   ============================================= */
+
+.about-section {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+@media (min-width: 640px)  { .about-section { padding: 5rem 0; } }
+@media (min-width: 1024px) { .about-section { padding: 6rem 0; } }
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #f97316;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  color: #374151;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.stat-desc {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* About Quote Box */
+.about-quote {
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border-left: 4px solid #f97316;
+}
+
+.about-quote p {
+  font-size: 1.125rem;
+  color: #374151;
+  line-height: 1.75;
+}

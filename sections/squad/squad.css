@@ -1,0 +1,248 @@
+/* =============================================
+   SQUAD.CSS — Squad Section Styles (+ Filter)
+   Ngelowetan FC | sections/squad/squad.css
+   ============================================= */
+
+.squad-section {
+  padding: 4rem 0;
+  background: #000;
+}
+
+@media (min-width: 640px)  { .squad-section { padding: 5rem 0; } }
+@media (min-width: 1024px) { .squad-section { padding: 6rem 0; } }
+
+/* ── Filter Bar ──────────────────────────────── */
+.squad-filter-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+#squad-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #374151;
+  border-radius: 9999px;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.25s, color 0.25s, transform 0.2s;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.filter-btn:hover {
+  border-color: #f97316;
+  color: #f97316;
+  transform: translateY(-2px);
+}
+
+.filter-btn--active {
+  background: #f97316;
+  border-color: #f97316;
+  color: #fff;
+}
+
+.filter-btn--active:hover {
+  background: #ea580c;
+  border-color: #ea580c;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Badge hitungan pemain di tiap filter */
+.filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.15);
+  padding: 0 0.3rem;
+}
+
+.filter-btn--active .filter-count {
+  background: rgba(0,0,0,0.2);
+}
+
+/* ── Players Grid ────────────────────────────── */
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .players-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+}
+
+@media (min-width: 1024px) {
+  .players-grid { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+}
+
+/* ── Player Card ─────────────────────────────── */
+.player-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.35s ease, box-shadow 0.3s ease;
+  background: #111;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px #f97316, 0 20px 40px rgba(249,115,22,0.2);
+}
+
+/* Filter visibility states */
+.player-card--visible {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.player-card--hidden {
+  display: none;
+}
+
+/* Photo Wrapper */
+.player-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.player-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.player-card:hover .player-photo {
+  transform: scale(1.10);
+}
+
+/* Position Badge */
+.player-badge {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Hover Overlay */
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 3rem;
+  transition: opacity 0.3s ease;
+}
+
+.player-card:hover .player-overlay {
+  opacity: 1;
+}
+
+.player-info {
+  text-align: center;
+}
+
+.player-number-big {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #f97316;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.player-name {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+}
+
+.player-position {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Bottom Bar (Always Visible) ─────────────── */
+.player-bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(to right, #111, #1a1a1a);
+  border-top: 1px solid #2a2a2a;
+}
+
+.player-name-short {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
+
+.player-num-tag {
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #f97316;
+  flex-shrink: 0;
+}
+
+/* ── Orange Border Accent on Hover ───────────── */
+.player-border {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #f97316;
+  border-radius: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.player-card:hover .player-border {
+  opacity: 1;
+}
