@@ -4,7 +4,7 @@
    ============================================= */
 
 const achievements = [
-  { id: 1, title: 'Juara 1 Futsal Trofeo Liga Ramadhan 2026', count: 5, year: '2026', icon: '🏆' },
+  { id: 1, title: 'Juara 1 Futsal Trofeo Liga Ramadhan 2026', count: 1, year: '2026', icon: '🏆' },
 ];
 
 function renderAchievements() {

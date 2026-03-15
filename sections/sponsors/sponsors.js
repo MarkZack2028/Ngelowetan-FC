@@ -4,7 +4,12 @@
    ============================================= */
 
 const sponsors = [
-  { id: 1, name: 'Toko Dadi Mumbul', category: 'Main Sponsor' },
+  {
+    id: 1,
+    name: 'Toko Dadi Mumbul',
+    category: 'Main Sponsor',
+    logo: 'public/Sponsor/TokoDadiMumbul.jpeg',
+  },
 ];
 
 function renderSponsors() {
@@ -20,9 +25,10 @@ function renderSponsors() {
     >
       <div class="sponsor-card-inner">
         <div class="sponsor-default-view">
-          <div class="sponsor-logo-placeholder">
-            <span>${sponsor.name.charAt(0)}</span>
-          </div>
+          ${sponsor.logo
+            ? `<img src="${sponsor.logo}" alt="Logo ${sponsor.name}" class="sponsor-logo-img" />`
+            : `<div class="sponsor-logo-placeholder"><span>${sponsor.name.charAt(0)}</span></div>`
+          }
           <h3 class="sponsor-name-gray">${sponsor.name}</h3>
         </div>
         <div class="sponsor-hover-view">

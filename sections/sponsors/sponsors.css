@@ -74,7 +74,23 @@
 .sponsor-card:hover .sponsor-default-view { opacity: 0; }
 .sponsor-card:hover .sponsor-hover-view   { opacity: 1; }
 
-/* Logo Placeholder */
+/* Logo Image */
+.sponsor-logo-img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 0.375rem;
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(30%);
+  transition: filter 0.3s ease;
+}
+
+.sponsor-card:hover .sponsor-logo-img {
+  filter: grayscale(0%);
+}
+
+/* Logo Placeholder (fallback jika tidak ada gambar) */
 .sponsor-logo-placeholder {
   width: 4rem;
   height: 4rem;
