@@ -6,78 +6,287 @@
 // ── Data Pemain ──────────────────────────────────────────────────
 const players = [
   // KIPER
-  { id: 1, name: 'Farid', position: 'Kiper', number: 1, photo: 'public/assetMinsoc/Farid.jpg' },
-  { id: 2, name: 'Sokib', position: 'Kiper', number: 12, photo: 'public/assetMinsoc/Sokib.jpg' },
-  { id: 3, name: 'NikoSD', position: 'Kiper', number: 26, photo: 'public/assetMinsoc/NikoSD.jpeg' },
-  { id: 4, name: 'Bagas', position: 'Kiper', number: 21, photo: 'public/assetMinsoc/Bagas.jpg' },
-  { id: 5, name: 'Tegar', position: 'Kiper', number: 22, photo: 'public/assetMinsoc/Tegar.jpg' },
+  {
+    id: 27,
+    name: "Bagas",
+    position: "Kiper",
+    number: 27,
+    photo: "public/AssetSquad/Bagas.jpeg",
+  },
+  {
+    id: 1,
+    name: "Sokib",
+    position: "Kiper",
+    number: 1,
+    photo: "public/AssetSquad/Sokib.jpeg",
+  },
+  {
+    id: 32,
+    name: "Niko",
+    position: "Kiper",
+    number: 32,
+    photo: "public/AssetSquad/NikoSD.jpeg",
+  },
+  {
+    id: 17,
+    name: "Farid",
+    position: "Kiper",
+    number: 17,
+    photo: "public/AssetSquad/ulo.jpeg",
+  },
+  {
+    id: 22,
+    name: "Tegar",
+    position: "Kiper",
+    number: 22,
+    photo: "public/AssetSquad/Tegar.jpeg",
+  },
 
-  // ANCHOR
-  { id: 6, name: 'David', position: 'Anchor', number: 2, photo: 'public/assetMinsoc/David.jpg' },
-  { id: 7, name: 'Niko', position: 'Anchor', number: 3, photo: 'public/assetMinsoc/Niko.jpg' },
-  { id: 8, name: 'Rito', position: 'Anchor', number: 27, photo: 'public/assetMinsoc/Rito.jpeg' },
-  { id: 9, name: 'Faiz', position: 'Anchor', number: 4, photo: 'public/assetMinsoc/Faiz.jpg' },
-  { id: 29, name: 'Kristianto', position: 'Pivot', number: 17, photo: 'public/assetMinsoc/Kristianto.jpg' },
-  { id: 11, name: 'Ego', position: 'Anchor', number: 15, photo: 'public/assetMinsoc/Ego.jpg' },
-  { id: 12, name: 'Jamal', position: 'Anchor', number: 28, photo: 'public/assetMinsoc/Jamal.jpeg' },
-  { id: 14, name: 'Anam', position: 'Anchor', number: 23, photo: 'public/assetMinsoc/Anam.jpg' },
-  { id: 13, name: 'Deka', position: 'Anchor', number: 18, photo: 'public/assetMinsoc/Deka.jpg' },
+  // BERTAHAN
+  {
+    id: 31,
+    name: "David",
+    position: "Bertahan",
+    number: 31,
+    photo: "public/AssetSquad/David.jpeg",
+  },
+  {
+    id: 28,
+    name: "Niko",
+    position: "Bertahan",
+    number: 28,
+    photo: "public/AssetSquad/Niko.jpeg",
+  },
+  {
+    id: 6,
+    name: "Rito",
+    position: "Bertahan",
+    number: 6,
+    photo: "public/AssetSquad/Rito.jpeg",
+  },
+  {
+    id: 47,
+    name: "Faiz",
+    position: "Penyerang",
+    number: 47,
+    photo: "public/AssetSquad/Faiz.jpeg",
+  },
+  {
+    id: 33,
+    name: "Ananda",
+    position: "Penyerang",
+    number: 33,
+    photo: "public/AssetSquad/Konate.jpeg",
+  },
+  {
+    id: 2,
+    name: "Ego",
+    position: "Bertahan",
+    number: 2,
+    photo: "public/AssetSquad/Ego.jpeg",
+  },
+  {
+    id: 44,
+    name: "Jamal",
+    position: "Bertahan",
+    number: 44,
+    photo: "public/AssetSquad/Jamal.jpeg",
+  },
+  {
+    id: 19,
+    name: "Anam",
+    position: "Bertahan",
+    number: 19,
+    photo: "public/AssetSquad/Anam.jpeg",
+  },
+  {
+    id: 15,
+    name: "Ajik",
+    position: "Penyerang",
+    number: 15,
+    photo: "public/AssetSquad/Ajik.jpeg",
+  },
 
-  // FLANK
-  { id: 16, name: 'Ikmal', position: 'Flank', number: 5, photo: 'public/assetMinsoc/Ikmal.jpg' },
-  { id: 15, name: 'Dimas', position: 'Flank', number: 25, photo: 'public/assetMinsoc/Dimas.jpeg' },
-  { id: 17, name: 'Andre', position: 'Flank', number: 10, photo: 'public/assetMinsoc/Andre.jpg' },
-  { id: 18, name: 'Daffa', position: 'Flank', number: 7, photo: 'public/assetMinsoc/Daffa.jpg' },
-  { id: 19, name: 'Dakek', position: 'Flank', number: 8, photo: 'public/assetMinsoc/Dakek.jpg' },
-  { id: 20, name: 'Faizal', position: 'Flank', number: 11, photo: 'public/assetMinsoc/Faizal.jpg' },
-  { id: 21, name: 'Ipek', position: 'Flank', number: 14, photo: 'public/assetMinsoc/Ipek.jpg' },
-  { id: 22, name: 'Chabib', position: 'Flank', number: 19, photo: 'public/assetMinsoc/Chabib.jpg' },
-  { id: 24, name: 'Adrian', position: 'Flank', number: 20, photo: 'public/assetMinsoc/Adrian.jpg' },
-  { id: 23, name: 'Mad Sampo', position: 'Flank', number: 29, photo: 'public/assetMinsoc/Mad Sampo.jpeg' },
+  // TENGAH
+  {
+    id: 7,
+    name: "Ikmal",
+    position: "Penyerang",
+    number: 7,
+    photo: "public/AssetSquad/ikmall.jpeg",
+  },
+  {
+    id: 12,
+    name: "Dimas",
+    position: "Penyerang",
+    number: 12,
+    photo: "public/AssetSquad/Dimas.jpeg",
+  },
+  {
+    id: 24,
+    name: "Daffa",
+    position: "Tengah",
+    number: 24,
+    photo: "public/AssetSquad/Daffa.jpeg",
+  },
+  {
+    id: 99,
+    name: "Andre",
+    position: "Penyerang",
+    number: 99,
+    photo: "public/AssetSquad/Andre.jpeg",
+  },
+  {
+    id: 16,
+    name: "Faisal",
+    position: "Tengah",
+    number: 16,
+    photo: "public/AssetSquad/Faizal.jpeg",
+  },
+  {
+    id: 25,
+    name: "Dakek",
+    position: "Penyerang",
+    number: 25,
+    photo: "public/AssetSquad/Dakek.jpeg",
+  },
+  {
+    id: 76,
+    name: "Ipek",
+    position: "Tengah",
+    number: 76,
+    photo: "public/AssetSquad/Ipek.jpeg",
+  },
+  {
+    id: 20,
+    name: "Khabib",
+    position: "Penyerang",
+    number: 20,
+    photo: "public/AssetSquad/Chabib.jpeg",
+  },
+  {
+    id: 36,
+    name: "Adrian",
+    position: "Tengah",
+    number: 36,
+    photo: "public/AssetSquad/Adrian.jpeg",
+  },
+  {
+    id: 3,
+    name: "Mad",
+    position: "Bertahan",
+    number: 3,
+    photo: "public/AssetSquad/Mad Sampo.jpeg",
+  },
 
-  // PIVOT
-  { id: 26, name: 'Ajik', position: 'Pivot', number: 9, photo: 'public/assetMinsoc/Ajik.jpg' },
-  { id: 25, name: 'Bagus', position: 'Pivot', number: 24, photo: 'public/assetMinsoc/Bagus.jpeg' },
-  { id: 27, name: 'Konate', position: 'Pivot', number: 13, photo: 'public/assetMinsoc/Konate.jpg' },
-  { id: 28, name: 'Fahri', position: 'Pivot', number: 16, photo: 'public/assetMinsoc/Fahri.jpg' },
-  { id: 10, name: 'Putra', position: 'Anchor', number: 6, photo: 'public/assetMinsoc/Putra.jpg' },
+  // PENYERANG
+  {
+    id: 8,
+    name: "Gustian",
+    position: "Tengah",
+    number: 8,
+    photo: "public/AssetSquad/Tian.jpeg",
+  },
+  {
+    id: 18,
+    name: "Bagus",
+    position: "Tengah",
+    number: 18,
+    photo: "public/AssetSquad/Bagus.jpeg",
+  },
+  {
+    id: 9,
+    name: "Kristianto",
+    position: "Bertahan",
+    number: 9,
+    photo: "public/AssetSquad/Kristianto.jpeg",
+  },
+  {
+    id: 30,
+    name: "Fahri",
+    position: "Penyerang",
+    number: 30,
+    photo: "public/AssetSquad/Fahri.jpeg",
+  },
+  {
+    id: 34,
+    name: "Nugraha",
+    position: "Bertahan",
+    number: 34,
+    photo: "public/AssetSquad/Putra.jpeg",
+  },
+  {
+    id: 11,
+    name: "Deka",
+    position: "Tengah",
+    number: 11,
+    photo: "public/AssetSquad/Deka.jpeg",
+  },
+  {
+    id: 55,
+    name: "Habibi",
+    position: "Penyerang",
+    number: 55,
+    photo: "public/AssetSquad/hbb.jpeg",
+  },
+  {
+    id: 14,
+    name: "Anjis",
+    position: "Bertahan",
+    number: 14,
+    photo: "public/AssetSquad/anjs.jpeg",
+  },
+  {
+    id: 29,
+    name: "Ranu",
+    position: "Tengah",
+    number: 29,
+    photo: "public/AssetSquad/Ranu.jpeg",
+  },
 ];
 
 // ── Warna badge per posisi ───────────────────────────────────────
 const positionColors = {
-  Kiper: { bg: '#1d4ed8', label: '#93c5fd' }, // biru
-  Anchor: { bg: '#15803d', label: '#86efac' }, // hijau
-  Flank: { bg: '#7e22ce', label: '#d8b4fe' }, // ungu
-  Pivot: { bg: '#b45309', label: '#fcd34d' }, // kuning
+  Kiper: { bg: "#1d4ed8", label: "#93c5fd" }, // biru
+  Bertahan: { bg: "#15803d", label: "#86efac" }, // hijau
+  Tengah: { bg: "#7e22ce", label: "#d8b4fe" }, // ungu
+  Penyerang: { bg: "#b45309", label: "#fcd34d" }, // kuning
 };
 
 // ── Render Filter Buttons ────────────────────────────────────────
 function renderFilterButtons() {
-  const container = document.getElementById('squad-filter');
+  const container = document.getElementById("squad-filter");
   if (!container) return;
 
-  const positions = ['Semua', 'Kiper', 'Anchor', 'Flank', 'Pivot'];
+  const positions = ["Semua", "Kiper", "Bertahan", "Tengah", "Penyerang"];
 
-  container.innerHTML = positions.map(pos => `
+  container.innerHTML = positions
+    .map(
+      (pos) => `
     <button
-      class="filter-btn ${pos === 'Semua' ? 'filter-btn--active' : ''}"
+      class="filter-btn ${pos === "Semua" ? "filter-btn--active" : ""}"
       data-filter="${pos}"
       id="filter-btn-${pos.toLowerCase()}"
     >
       ${pos}
-      <span class="filter-count">${pos === 'Semua'
-      ? players.length
-      : players.filter(p => p.position === pos).length
-    }</span>
+      <span class="filter-count">${
+        pos === "Semua"
+          ? players.length
+          : players.filter((p) => p.position === pos).length
+      }</span>
     </button>
-  `).join('');
+  `,
+    )
+    .join("");
 
   // Event listener setiap tombol filter
-  container.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
+  container.querySelectorAll(".filter-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
       // Update active state
-      container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-btn--active'));
-      btn.classList.add('filter-btn--active');
+      container
+        .querySelectorAll(".filter-btn")
+        .forEach((b) => b.classList.remove("filter-btn--active"));
+      btn.classList.add("filter-btn--active");
 
       // Jalankan filter
       filterPlayers(btn.dataset.filter);
@@ -87,30 +296,34 @@ function renderFilterButtons() {
 
 // ── Filter Pemain ────────────────────────────────────────────────
 function filterPlayers(position) {
-  const cards = document.querySelectorAll('.player-card');
+  const cards = document.querySelectorAll(".player-card");
 
-  cards.forEach(card => {
+  cards.forEach((card) => {
     const cardPos = card.dataset.position;
-    const match = position === 'Semua' || cardPos === position;
+    const match = position === "Semua" || cardPos === position;
 
     if (match) {
-      card.classList.remove('player-card--hidden');
-      card.classList.add('player-card--visible');
+      card.classList.remove("player-card--hidden");
+      card.classList.add("player-card--visible");
     } else {
-      card.classList.add('player-card--hidden');
-      card.classList.remove('player-card--visible');
+      card.classList.add("player-card--hidden");
+      card.classList.remove("player-card--visible");
     }
   });
 }
 
 // ── Render Player Cards ──────────────────────────────────────────
 function renderPlayers() {
-  const grid = document.getElementById('players-grid');
+  const grid = document.getElementById("players-grid");
   if (!grid) return;
 
-  grid.innerHTML = players.map(player => {
-    const colors = positionColors[player.position] || { bg: '#f97316', label: '#fed7aa' };
-    return `
+  grid.innerHTML = players
+    .map((player) => {
+      const colors = positionColors[player.position] || {
+        bg: "#f97316",
+        label: "#fed7aa",
+      };
+      return `
       <div
         class="player-card player-card--visible fade-in"
         id="player-card-${player.id}"
@@ -148,5 +361,6 @@ function renderPlayers() {
         <div class="player-border"></div>
       </div>
     `;
-  }).join('');
+    })
+    .join("");
 }

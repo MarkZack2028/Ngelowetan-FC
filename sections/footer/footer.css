@@ -13,12 +13,20 @@
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 2.5rem;
   margin-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
-  .footer-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Brand */
@@ -60,26 +68,28 @@
 }
 
 .social-btn {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background: #f97316;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
   flex-shrink: 0;
 }
 
 .social-btn:hover {
   background: #ea580c;
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 .social-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 /* Footer Bottom Bar */
@@ -93,4 +103,84 @@
   color: #9ca3af;
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
+}
+
+/* ─── Struktur Organisasi ─────────────────── */
+.footer-org {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.org-group {
+  background: #111;
+  border: 1px solid #1f2937;
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  transition: border-color 0.25s ease;
+}
+
+.org-group:hover {
+  border-color: #f97316;
+}
+
+.org-role {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f97316;
+  margin-bottom: 0.35rem;
+}
+
+.org-icon {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex-shrink: 0;
+}
+
+.org-names {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.6rem;
+}
+
+.org-names li {
+  font-size: 0.8rem;
+  color: #d1d5db;
+  position: relative;
+  padding-left: 0.8rem;
+}
+
+.org-names li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: #f97316;
+}
+
+/* Captain highlight */
+.org-captain {
+  border-color: #f97316;
+  background: linear-gradient(135deg, #1a0a00, #111);
+}
+
+.captain-label {
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f97316;
+}
+
+.org-captain .org-names li {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
 }
